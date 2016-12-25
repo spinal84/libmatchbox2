@@ -1101,15 +1101,15 @@ mb_wm_focus_client_as_stacked (MBWindowManager *wm,
             /* anything below this is necessarily invisible */
             break;
         }
+
+      /* Make sure the focus is not None, otherwise we won't get KeyPressed
+       * events and shortcurs will stop working. */
+      XSetInputFocus(wm->xdpy, wm->root_win->xwindow, RevertToPointerRoot,
+                     CurrentTime);
     } else
       /* don't give focus back to any already mapped window
        * because the touch screen is still locked and we don't want
        * the application to wake up */;
-
-  /* Make sure the focus is not None, otherwise we won't get KeyPressed
-   * events and shortcurs will stop working. */
-  XSetInputFocus(wm->xdpy, wm->root_win->xwindow, RevertToPointerRoot,
-                 CurrentTime);
 }
 
 void
