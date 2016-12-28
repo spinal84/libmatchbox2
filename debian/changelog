@@ -1,6 +1,12 @@
+matchbox-window-manager-2 (0.2.92-3) unstable; urgency=low
+
+  * Fixes focus loss on tk unlock.
+
+ -- Arthur Demchenkov <spinal.by@gmail.com>  Wed, 28 Dec 2016 04:52:33 +0300
+
 matchbox-window-manager-2 (0.2.92-2) unstable; urgency=low
 
-  * Fixes version clash with Nokia maemo versions,
+  * Fixes version clash with Nokia maemo versions.
 
  -- Christian Ratzenhofer <christian_ratzenhofer@yahoo.de>  Sun, 23 Dec 2012 16:42:13 +0100
 
